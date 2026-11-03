@@ -233,7 +233,7 @@ footer{
       <div class="site-grid" id="siteGrid"></div>
       <div class="bottom-note">
         <span>sites i've made</span>
-        <span>✳</span>
+        <span></span>
       </div>
     </main>
   </div>
@@ -312,7 +312,7 @@ SITES.forEach((site, index) => {
 
   const corner = document.createElement("span");
   corner.className = "corner";
-  corner.textContent = "✳";
+  corner.textContent = "";
 
   const title = document.createElement("h3");
   title.textContent = site.title;
@@ -323,9 +323,7 @@ SITES.forEach((site, index) => {
   const visit = document.createElement("span");
   visit.className = "visit";
   visit.append("Set course");
-  const arrow = document.createElement("b");
-  arrow.textContent = "↗";
-  visit.append(arrow);
+
 
   card.append(number, corner, title, description, visit);
   grid.append(card);
